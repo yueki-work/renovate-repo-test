@@ -1,3 +1,4 @@
 {
+    "prBodyNotes": "{{{ toJSON (toObject 'upgrades' upgrades 'others' (toArray sourceRepo sourceUrl repository (toObject 'foo' 'bar') )) }}}",
     "commitBody": "{{{ toJSON (toObject 'upgrades' upgrades 'others' (toArray sourceRepo sourceUrl repository (toObject 'foo' 'bar') )) }}}"
 }
