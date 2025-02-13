@@ -3,9 +3,12 @@
     // so unable to get `upgrades` object at prBodyNotes
     "prBodyNotes": "{{{ toJSON (toObject 'currentVersion' currentVersion 'newVersion' newVersion 'others' (toArray sourceRepo sourceUrl repository (toObject 'foo' 'bar') )) }}}",
     
-    "commitBody": "My-Metadata: {{{ toJSON (toObject 'upgrades' upgrades 'baseBranch' upgrades.0.baseBranch 'others' (toArray sourceRepo sourceUrl repository (toObject 'foo' 'bar'))) }}}"
+    "commitBody": "My-Metadata: {{{ toJSON (toObject 'upgrades' upgrades 'baseBranch' upgrades.0.baseBranch 'others' (toArray sourceRepo sourceUrl repository (toObject 'foo' 'bar'))) }}}",
 
      //"commitBody": "My-Metadata: {{{ toJSON (toObject 'version' version 'versions' versions ) }}}"
 
+    "extends": [
+      "group:all"
+    ]
 
 }
