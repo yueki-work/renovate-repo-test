@@ -1,7 +1,7 @@
 {
     // passing `upgrade` object to generate prBody here https://github.com/renovatebot/renovate/blob/8fc2a7bdb294bafcacc6f62e63699d68f52e4119/lib/workers/repository/update/pr/body/notes.ts#L13
     // so unable to get `upgrades` object at prBodyNotes
-    "prBodyNotes": "{{{ toJSON (toObject 'depName' depName 'currentVersion' currentVersion 'newVersion' newVersion 'updateType' updateType ) }}}",
+    "prBodyNotes": "<!-- Renovate-Metadata: {{{ toJSON (toObject 'depName' depName 'currentVersion' currentVersion 'newVersion' newVersion 'updateType' updateType ) }}} -->",
     
     "commitBody": "My-Metadata: {{{ toJSON (toObject 'upgrades' upgrades 'baseBranch' upgrades.0.baseBranch 'others' (toArray sourceRepo sourceUrl repository (toObject 'foo' 'bar'))) }}}",
 
