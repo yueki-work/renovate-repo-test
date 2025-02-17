@@ -7,8 +7,10 @@
 
      //"commitBody": "My-Metadata: {{{ toJSON (toObject 'version' version 'versions' versions ) }}}"
 
-    "extends": [
-      "group:all"
+    "packageRules": [
+        {
+            "groupName": "GitHub Actions",
+            "matchManagers": ["github-actions"]
+        }
     ]
-
 }
